@@ -12,7 +12,8 @@ about me:
 ### let's connect!
 
 [![linkedin](https://img.shields.io/badge/LinkedIn-grey?style=flat-square&logo=linkedin&logoColor=white&labelColor=grey)](https://www.linkedin.com/in/kseniiavozisova/)
-[![email](https://img.shields.io/badge/Email-grey?style=flat-square&labelColor=grey)](mailto:kseniia.vozisova@gmail.com)
+[![email](https://img.shields.io/badge/Email-grey?style=flat-square&logo=gmail&logoColor=white&labelColor=grey)](mailto:kseniia.vozisova@gmail.com)
+[![telegram](https://img.shields.io/badge/Telegram-grey?style=flat-square&logo=telegram&logoColor=white&labelColor=grey)](https://t.me/vozikkks)
 
 
 ### mobile and API testing:
@@ -40,7 +41,6 @@ about me:
 ![jira](https://img.shields.io/badge/Jira-grey?style=flat-square&logo=jira&logoColor=white&labelColor=grey)
 ![confluence](https://img.shields.io/badge/Confluence-grey?style=flat-square&logo=confluence&logoColor=white&labelColor=grey)
 ![testrail](https://img.shields.io/badge/TestRail-grey?style=flat-square&labelColor=grey)
-![leapsome](https://img.shields.io/badge/Leapsome-grey?style=flat-square&labelColor=grey)
 ![notion](https://img.shields.io/badge/Notion-grey?style=flat-square&logo=notion&logoColor=white&labelColor=grey)
 
 ### working with data:
@@ -62,6 +62,7 @@ more artifacts will be added over time to demonstrate my evolving expertise
 ### test artifacts:
 
 - crafting test plans, executing test cases, and leading bug tracking to enhance software performance
-- explore my [simple Postman collection on GitHub]() for API testing
+- explore my [collection of JavaScript projects](https://github.com/vozikkks/js-learning-projects) which at Codeacademy course
+- explore my [simple Postman collection on GitHub](https://github.com/vozikkks/api-collection) for API testing
 
 more artifacts will be added over time to demonstrate my evolving expertise
