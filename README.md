@@ -15,35 +15,33 @@ about me:
 [![email](https://img.shields.io/badge/Email-grey?style=flat-square&labelColor=grey)](mailto:kseniia.vozisova@gmail.com)
 
 
-### API testing:
+### mobile and API testing:
 
-[![postman](https://img.shields.io/badge/Postman-grey?style=flat-square&logo=postman&logoColor=white&labelColor=grey)](https://www.postman.com/)
-[![proxyman](https://img.shields.io/badge/Proxyman-grey?style=flat-square&labelColor=grey)](https://proxyman.io/)
-[![charles](https://img.shields.io/badge/Charles-grey?style=flat-square&labelColor=grey)](https://www.charlesproxy.com/)
-
-### mobile application testing:
-
-[![android studio](https://img.shields.io/badge/Android_Studio-grey?style=flat-square&logo=android-studio&logoColor=white&labelColor=grey)](https://developer.android.com/studio)
-[![xcode](https://img.shields.io/badge/Xcode-grey?style=flat-square&logo=xcode&logoColor=white&labelColor=grey)](https://developer.apple.com/xcode/)
+![android studio](https://img.shields.io/badge/Android_Studio-grey?style=flat-square&logo=android-studio&logoColor=white&labelColor=grey)
+![xcode](https://img.shields.io/badge/Xcode-grey?style=flat-square&logo=xcode&logoColor=white&labelColor=grey)
+![postman](https://img.shields.io/badge/Postman-grey?style=flat-square&logo=postman&logoColor=white&labelColor=grey)
+![proxyman](https://img.shields.io/badge/Proxyman-grey?style=flat-square&labelColor=grey)
+![charles](https://img.shields.io/badge/Charles-grey?style=flat-square&labelColor=grey)
 
 ### automation and coding skills:
 
-[![kaspresso](https://img.shields.io/badge/Kaspresso-grey?style=flat-square&labelColor=grey)](https://github.com/KasperskyLab/Kaspresso)
-[![kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=kotlin&logoColor=white&labelColor=grey)](https://kotlinlang.org/)
-[![playwright](https://img.shields.io/badge/Playwright-grey?style=flat-square&logo=playwright&logoColor=white&labelColor=grey)](https://playwright.dev/)
+![kotlin](https://img.shields.io/badge/Kotlin-grey?style=flat-square&logo=kotlin&logoColor=white&labelColor=grey)
+![JavaScript](https://img.shields.io/badge/JavaScript-grey?style=flat-square&logo=javascript&logoColor=white&labelColor=grey)
+![kaspresso](https://img.shields.io/badge/Kaspresso-grey?style=flat-square&labelColor=grey)
+![playwright](https://img.shields.io/badge/Playwright-grey?style=flat-square&logo=playwright&logoColor=white&labelColor=grey)
 
 ### monitoring and logs:
 
-[![grafana](https://img.shields.io/badge/Grafana-grey?style=flat-square&logo=grafana&logoColor=white&labelColor=grey)](https://grafana.com/)
-[![firebase crashlytics](https://img.shields.io/badge/Firebase_Crashlytics-grey?style=flat-square&logo=firebase&logoColor=white&labelColor=grey)](https://firebase.google.com/products/crashlytics)
+![grafana](https://img.shields.io/badge/Grafana-grey?style=flat-square&logo=grafana&logoColor=white&labelColor=grey)
+![firebase crashlytics](https://img.shields.io/badge/Firebase_Crashlytics-grey?style=flat-square&logo=firebase&logoColor=white&labelColor=grey)
 
 ### management and collaboration tools:
 
-[![jira](https://img.shields.io/badge/Jira-grey?style=flat-square&logo=jira&logoColor=white&labelColor=grey)](https://www.atlassian.com/software/jira)
-[![confluence](https://img.shields.io/badge/Confluence-grey?style=flat-square&logo=confluence&logoColor=white&labelColor=grey)](https://www.atlassian.com/software/confluence)
-[![testrail](https://img.shields.io/badge/TestRail-grey?style=flat-square&labelColor=grey)](https://www.gurock.com/testrail)
-[![leapsome](https://img.shields.io/badge/Leapsome-grey?style=flat-square&labelColor=grey)](https://www.leapsome.com/)
-[![notion](https://img.shields.io/badge/Notion-grey?style=flat-square&logo=notion&logoColor=white&labelColor=grey)](https://www.notion.so/)
+![jira](https://img.shields.io/badge/Jira-grey?style=flat-square&logo=jira&logoColor=white&labelColor=grey)
+![confluence](https://img.shields.io/badge/Confluence-grey?style=flat-square&logo=confluence&logoColor=white&labelColor=grey)
+![testrail](https://img.shields.io/badge/TestRail-grey?style=flat-square&labelColor=grey)
+![leapsome](https://img.shields.io/badge/Leapsome-grey?style=flat-square&labelColor=grey)
+![notion](https://img.shields.io/badge/Notion-grey?style=flat-square&logo=notion&logoColor=white&labelColor=grey)
 
 ### working with data:
 
