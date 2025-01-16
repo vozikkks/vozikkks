@@ -53,16 +53,17 @@ committed to continuous learning, adept in cross-functional collaboration, skill
 
 ### certifications:
 
-- **ISTQB® Certified Tester Foundation Level (CTFL) 4.0**:
-- **Yandex Professional Course on QA Engineering**:
-- **Postman API Fundamentals Student Expert**:
+- **Codecademy JavaScript course**
+- **ISTQB® Certified Tester Foundation Level (CTFL) 4.0**
+- **Postman API Fundamentals Student Expert**
+- **Yandex Professional Course on QA Engineering**
 
 more artifacts will be added over time to demonstrate my evolving expertise
 
 ### test artifacts:
 
 - crafting test plans, executing test cases, and leading bug tracking to enhance software performance
-- explore my [collection of JavaScript projects](https://github.com/vozikkks/js-learning-projects) which at Codeacademy course
+- explore my [collection of JavaScript projects](https://github.com/vozikkks/js-learning-projects) which at Codecademy course
 - explore my [simple Postman collection on GitHub](https://github.com/vozikkks/api-collection) for API testing
 
 more artifacts will be added over time to demonstrate my evolving expertise
