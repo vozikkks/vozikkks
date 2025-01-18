@@ -3,6 +3,10 @@ name: Update Showcase in ReadMe
 on:
   workflow_dispatch: # Allows manual trigger
 
+
+permissions:
+  contents: write
+
 jobs:
 
   update-readme:
