@@ -1,0 +1,24 @@
+{
+  "name": "vozikkks",
+  "version": "1.0.0",
+  "description": "QA engineer with a strong background in mobile, API and backend systems testing, currently seeking new opportunities to apply my skills in web or mobile",
+  "main": "update-readme.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vozikkks/vozikkks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vozikkks/vozikkks/issues"
+  },
+  "homepage": "https://github.com/vozikkks/vozikkks#readme",
+  "dependencies": {
+    "@octokit/rest": "^21.1.0",
+    "dotenv": "^16.4.7"
+  }
+}
