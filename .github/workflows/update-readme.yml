@@ -4,11 +4,17 @@ on:
   workflow_dispatch: # Allows manual trigger
 
 jobs:
+
   update-readme:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
+      - name: Print Current Directory
+        run: pwd
+
+      - name: List Files
+        run: ls -la
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
