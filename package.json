@@ -4,6 +4,7 @@
   "description": "QA engineer with a strong background in mobile, API and backend systems testing, currently seeking new opportunities to apply my skills in web or mobile",
   "main": "update-readme.js",
   "scripts": {
+    "start": "node update-readme.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
