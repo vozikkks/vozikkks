@@ -67,6 +67,9 @@ more artifacts will be added over time to demonstrate my evolving expertise
 - explore my [simple Postman collection on GitHub](https://github.com/vozikkks/api-collection) for API testing
 
 <!-- SHOWCASE START -->
+- [api-collection-showcase](https://github.com/vozikkks/api-collection-showcase)
+- [js-learning-showcase](https://github.com/vozikkks/js-learning-showcase)
+- [sql-practice-showcase](https://github.com/vozikkks/sql-practice-showcase)
 <!-- SHOWCASE END -->
 
 more artifacts will be added over time to demonstrate my evolving expertise
