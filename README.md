@@ -66,4 +66,7 @@ more artifacts will be added over time to demonstrate my evolving expertise
 - explore my [collection of JavaScript projects](https://github.com/vozikkks/js-learning-projects) which at Codecademy course
 - explore my [simple Postman collection on GitHub](https://github.com/vozikkks/api-collection) for API testing
 
+<!-- SHOWCASE START -->
+<!-- SHOWCASE END -->
+
 more artifacts will be added over time to demonstrate my evolving expertise
