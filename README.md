@@ -51,29 +51,16 @@ I handle databases and services like PostgreSQL, MongoDB, AWS, Grafana and can e
 
 committed to continuous learning, proficient in cross-functional collaboration and clear communication, skilled in problem-solving and root-cause analysis
 
-### latest certifications:
-
-- **Codecademy JavaScript course**
-- **Codecademy Analyze Data with SQL course**
-- **ISTQB® Certified Tester Foundation Level (CTFL) 4.0**
-- **Postman API Fundamentals Student Expert**
-- **Yandex Professional Course on QA Engineering**
-
-more artifacts will be added over time to demonstrate my evolving expertise
-
 ### test artifacts:
 
 - crafting test plans, executing test cases, and leading bug tracking to enhance software performance
-- explore my collection of JavaScript projects at Codecademy course
+- explore my collection of JavaScript projects
 - explore my simple Postman collection on GitHub for API testing
 - explore my SQL practice collection
 
 
 this list is created automatically with GitHub Actions, adding all repositories that contain the word ‘showcase’ in their name:
 <!-- SHOWCASE START -->
-- [api-collection-showcase](https://github.com/vozikkks/api-collection-showcase)
-- [js-learning-showcase](https://github.com/vozikkks/js-learning-showcase)
-- [sql-practice-showcase](https://github.com/vozikkks/sql-practice-showcase)
 <!-- SHOWCASE END -->
 
 more artifacts will be added over time to demonstrate my evolving expertise
