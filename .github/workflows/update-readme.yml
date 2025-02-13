@@ -12,18 +12,24 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Set up Git
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Pull latest changes from remote
+        run: |
+          git fetch origin main
+          git pull origin main --rebase
+
       - name: Update Showcase links
         run: |
           # Your commands to update the showcase links
           git add README.md
-          git commit -m "Update showcase links"
+          git commit -m "Update showcase links" || echo "No changes to commit"
 
-      - name: Pull latest changes
-        run: git pull origin main
-        env:
-          PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-
-      - name: Push changes
-        run: git push origin main
+      - name: Push changes to remote
+        run: |
+          git push origin main
         env:
           PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}

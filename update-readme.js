@@ -2,7 +2,7 @@ const fs = require('fs'); // File system module to read and write files
 const { Octokit } = require('@octokit/rest'); // GitHub API client
 
 // GitHub token will be passed through environment variables
-const GITHUB_TOKEN = process.env.PERSONAL_ACCESS_TOKEN;  // Access PAT from the environment
+const GITHUB_TOKEN = process.env.PERSONAL_ACCESS_TOKEN; // Access PAT from the environment
 const USERNAME = 'vozikkks';
 
 // Create an instance of the Octokit client with authentication
