@@ -1,11 +1,17 @@
 import fs from 'fs';  // File system module to read and write files
 import { Octokit } from '@octokit/rest';  // GitHub API client
+import fetch from 'node-fetch';  // Import fetch
 
 const GITHUB_TOKEN = process.env.PERSONAL_ACCESS_TOKEN;  // Access PAT from the environment
 const USERNAME = 'vozikkks';  // Replace with your GitHub username
 
-// Create an instance of the Octokit client with authentication
-const octokit = new Octokit({ auth: GITHUB_TOKEN });
+// Create an instance of the Octokit client with authentication and fetch
+const octokit = new Octokit({ 
+  auth: GITHUB_TOKEN,
+  request: {
+    fetch: fetch,  // Pass fetch implementation
+  },
+});
 
 async function updateReadMe() {
     let allRepos = [];
