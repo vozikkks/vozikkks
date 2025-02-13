@@ -20,7 +20,7 @@ jobs:
 
       - name: Install dependencies and run script
         env:
-          PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }} # Pass the secret here
+          PERSONAL_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Pass the secret here
         run: |
           npm install
           node update-readme.js

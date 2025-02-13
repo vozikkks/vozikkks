@@ -1,10 +1,8 @@
-require('dotenv').config(); // Load environment variables from .env
-
 const fs = require('fs'); // File system module to read and write files
 const { Octokit } = require('@octokit/rest'); // GitHub API client
 
 // GitHub token will be passed through environment variables
-const GITHUB_TOKEN = process.env.PERSONAL_ACCESS_TOKEN;
+const GITHUB_TOKEN = process.env.PERSONAL_ACCESS_TOKEN;  // Access PAT from the environment
 const USERNAME = 'vozikkks';
 
 // Create an instance of the Octokit client with authentication
@@ -20,7 +18,6 @@ async function updateReadMe() {
     // Filter repositories by a specific identifier in their name (e.g., "showcase")
     const showcaseRepos = repos
         .filter(repo => repo.name.includes('showcase')) // Check if the repo name includes "showcase"
-        //.filter(repo => true) // to test without the key word
         .map(repo => `- [${repo.name}](${repo.html_url})`) // Format each repo as a Markdown link
         .join('\n'); // Combine all links into a single string
 
