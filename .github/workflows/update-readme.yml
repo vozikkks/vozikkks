@@ -1,49 +1,29 @@
 name: Update Showcase in ReadMe
 
 on:
-  workflow_dispatch: # Allows manual trigger
-
-permissions:
-  contents: write
+  push:
+    branches:
+      - main
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: "23" # Use your Node.js version
-
-      - name: Install dependencies and run script
-        env:
-          PERSONAL_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Pass the secret here
+      - name: Update Showcase links
         run: |
-          npm install
-          node update-readme.js
-
-      - name: Configure Git user
-        run: |
-          git config --global user.name "GitHub Action"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
-      - name: Stash uncommitted changes (if any)
-        run: |
-          git stash || echo "No changes to stash"
-
-      - name: Pull latest changes from remote
-        run: |
-          git fetch origin main
-          git rebase origin/main || { echo "Rebase failed. Please resolve conflicts."; exit 1; }
-
-      - name: Check for changes and commit
-        run: |
+          # Your commands to update the showcase links
           git add README.md
-          git diff --cached --exit-code || git commit -m "Update showcase links"
+          git commit -m "Update showcase links"
 
-      - name: Push Changes to Remote
-        run: |
-          git push origin main || { echo "Failed to push changes. Please resolve conflicts."; exit 1; }
+      - name: Pull latest changes
+        run: git pull origin main
+        env:
+          PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+
+      - name: Push changes
+        run: git push origin main
+        env:
+          PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
