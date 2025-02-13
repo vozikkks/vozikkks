@@ -37,7 +37,7 @@ jobs:
       - name: Pull latest changes from remote
         run: |
           git fetch origin main
-          git pull origin main --rebase || echo "No remote changes to pull"
+          git rebase origin/main || { echo "Rebase failed. Please resolve conflicts."; exit 1; }
 
       - name: Check for changes and commit
         run: |
@@ -46,4 +46,4 @@ jobs:
 
       - name: Push Changes to Remote
         run: |
-          git push origin main || echo "Failed to push changes"
+          git push origin main || { echo "Failed to push changes. Please resolve conflicts."; exit 1; }
