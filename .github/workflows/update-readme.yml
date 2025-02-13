@@ -21,7 +21,7 @@ jobs:
         run: npm install
 
       - name: Run script to update README.md
-        run: node update-readme.js
+        run: node update-readme.mjs
         env:
           PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }} # Your GitHub PAT
 
