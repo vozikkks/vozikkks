@@ -3,17 +3,16 @@ name: Update Showcase in ReadMe
 on:
   workflow_dispatch: # Allows manual trigger
 
-
 permissions:
   contents: write
 
 jobs:
-
   update-readme:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
+
       - name: Print Current Directory
         run: pwd
 
@@ -30,13 +29,21 @@ jobs:
           npm install
           node update-readme.js
 
-      - name: Commit and Push Changes
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Configure Git user
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin main || echo "No remote changes to pull"
+
+      - name: Pull latest changes from remote
+        run: |
+          git fetch origin main
+          git pull origin main --rebase || echo "No remote changes to pull"
+
+      - name: Check for changes and commit
+        run: |
           git add README.md
-          git commit -m "Update showcase links" || echo "No changes to commit"
-          git push origin main
+          git diff --cached --exit-code || git commit -m "Update showcase links"
+
+      - name: Push Changes to Remote
+        run: |
+          git push origin main || echo "Failed to push changes"
