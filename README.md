@@ -16,6 +16,10 @@ about me:
 this list is created automatically with GitHub Actions, adding all repositories that contain the word ‘showcase’ in their name:
 
 <!-- SHOWCASE START -->
+- [api-collection-showcase](https://github.com/vozikkks/api-collection-showcase)
+- [js-learning-showcase](https://github.com/vozikkks/js-learning-showcase)
+- [playwright-tests-showcase](https://github.com/vozikkks/playwright-tests-showcase)
+- [sql-practice-showcase](https://github.com/vozikkks/sql-practice-showcase)
 <!-- SHOWCASE END -->
 
 more artifacts will be added over time to demonstrate my evolving expertise
