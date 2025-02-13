@@ -12,24 +12,25 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Set up Git
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "16"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run script to update README.md
+        run: node update-readme.js
+        env:
+          PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }} # Your GitHub PAT
+
+      - name: Commit and push changes
         run: |
-          git config --global user.name "GitHub Action"
+          git config --global user.name "GitHub Actions"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
-      - name: Pull latest changes from remote
-        run: |
-          git fetch origin main
-          git pull origin main --rebase
-
-      - name: Update Showcase links
-        run: |
-          # Your commands to update the showcase links
           git add README.md
-          git commit -m "Update showcase links" || echo "No changes to commit"
-
-      - name: Push changes to remote
-        run: |
+          git commit -m "Update showcase links"
           git push origin main
         env:
-          PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }} # Use PAT for authentication

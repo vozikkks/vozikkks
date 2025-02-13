@@ -1,41 +1,50 @@
-const fs = require('fs'); // File system module to read and write files
-const { Octokit } = require('@octokit/rest'); // GitHub API client
+const fs = require('fs');  // File system module to read and write files
+const { Octokit } = require('@octokit/rest');  // GitHub API client
 
-// GitHub token will be passed through environment variables
-const GITHUB_TOKEN = process.env.PERSONAL_ACCESS_TOKEN; // Access PAT from the environment
-const USERNAME = 'vozikkks';
+const GITHUB_TOKEN = process.env.PERSONAL_ACCESS_TOKEN;  // Get PAT from the environment
+const USERNAME = 'vozikkks';  // Replace with your GitHub username
 
-// Create an instance of the Octokit client with authentication
+// Create an Octokit instance with authentication
 const octokit = new Octokit({ auth: GITHUB_TOKEN });
 
 async function updateReadMe() {
-    // Fetch the list of repositories for the user
-    const { data: repos } = await octokit.repos.listForUser({
-        username: USERNAME, // GitHub username
-        per_page: 100, // Number of repositories to fetch (maximum 100 per request)
-    });
+    let allRepos = [];
+    let page = 1;
 
-    // Filter repositories by a specific identifier in their name (e.g., "showcase")
-    const showcaseRepos = repos
-        .filter(repo => repo.name.includes('showcase')) // Check if the repo name includes "showcase"
-        .map(repo => `- [${repo.name}](${repo.html_url})`) // Format each repo as a Markdown link
-        .join('\n'); // Combine all links into a single string
+    // Fetch repositories with pagination (if you have more than 100)
+    while (true) {
+        const { data: repos } = await octokit.repos.listForUser({
+            username: USERNAME,
+            per_page: 100,
+            page: page,  // Pagination
+        });
 
-    const readmePath = './README.md'; // Path to the README file
-    const readmeContent = fs.readFileSync(readmePath, 'utf-8'); // Read the current content of README.md
+        if (repos.length === 0) break; // Exit if no more repos
+        allRepos = allRepos.concat(repos); // Add repos from current page
+        page++; // Move to next page
+    }
 
-    // Replace the content between <!-- SHOWCASE START --> and <!-- SHOWCASE END -->
+    // Filter repositories that contain 'showcase' in their name
+    const showcaseRepos = allRepos
+        .filter(repo => repo.name.includes('showcase'))  // Filter by 'showcase'
+        .map(repo => `- [${repo.name}](${repo.html_url})`)  // Format as Markdown links
+        .join('\n');  // Join the links as a single string
+
+    const readmePath = './README.md';  // Path to your README file
+    const readmeContent = fs.readFileSync(readmePath, 'utf-8');  // Read the current README
+
+    // Replace content between <!-- SHOWCASE START --> and <!-- SHOWCASE END -->
     const updatedContent = readmeContent.replace(
         /<!-- SHOWCASE START -->([\s\S]*?)<!-- SHOWCASE END -->/,
         `<!-- SHOWCASE START -->\n${showcaseRepos}\n<!-- SHOWCASE END -->`
     );
 
-    // Write the updated content back to the README file
+    // Write updated content back to README.md
     fs.writeFileSync(readmePath, updatedContent, 'utf-8');
 }
 
 // Run the function and catch any errors
 updateReadMe().catch(err => {
-    console.error(err); // Log the error
-    process.exit(1); // Exit the script with an error code
+    console.error(err);  // Log the error
+    process.exit(1);  // Exit with error code
 });
