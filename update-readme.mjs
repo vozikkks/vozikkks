@@ -1,17 +1,16 @@
-const fs = require('fs');  // File system module to read and write files
-const { Octokit } = require('@octokit/rest');  // GitHub API client
+import fs from 'fs';  // File system module to read and write files
+import { Octokit } from '@octokit/rest';  // GitHub API client
 
-const GITHUB_TOKEN = process.env.PERSONAL_ACCESS_TOKEN;  // Get PAT from the environment
+const GITHUB_TOKEN = process.env.PERSONAL_ACCESS_TOKEN;  // Access PAT from the environment
 const USERNAME = 'vozikkks';  // Replace with your GitHub username
 
-// Create an Octokit instance with authentication
+// Create an instance of the Octokit client with authentication
 const octokit = new Octokit({ auth: GITHUB_TOKEN });
 
 async function updateReadMe() {
     let allRepos = [];
     let page = 1;
 
-    // Fetch repositories with pagination (if you have more than 100)
     while (true) {
         const { data: repos } = await octokit.repos.listForUser({
             username: USERNAME,
@@ -19,12 +18,12 @@ async function updateReadMe() {
             page: page,  // Pagination
         });
 
-        if (repos.length === 0) break; // Exit if no more repos
+        if (repos.length === 0) break; // Exit when no more repos
         allRepos = allRepos.concat(repos); // Add repos from current page
-        page++; // Move to next page
+        page++; // Go to the next page
     }
 
-    // Filter repositories that contain 'showcase' in their name
+    // Filter repositories by a specific identifier in their name (e.g., "showcase")
     const showcaseRepos = allRepos
         .filter(repo => repo.name.includes('showcase'))  // Filter by 'showcase'
         .map(repo => `- [${repo.name}](${repo.html_url})`)  // Format as Markdown links
@@ -46,5 +45,5 @@ async function updateReadMe() {
 // Run the function and catch any errors
 updateReadMe().catch(err => {
     console.error(err);  // Log the error
-    process.exit(1);  // Exit with error code
+    process.exit(1);  // Exit the script with an error code
 });
