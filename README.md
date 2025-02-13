@@ -8,24 +8,23 @@ about me:
 - 🎓 bachelor’s in Infocommunication Technologies and Communication Systems from ITMO University
 - 🌍 based in Hamburg, Germany
 - 💼 most recently at Mobimeo, enhancing mobile app quality and backend services
-- 💬 Passionate about mobile/API testing, automation, and exploring innovative testing approaches
-- 📚 Continuously learning and improving my skills
+- 💬 passionate about mobile/API testing, automation, and exploring innovative testing approaches
+- 📚 continuously learning and improving my skills
 
 ### projects/test artifacts:
 
 this list is created automatically with GitHub Actions, adding all repositories that contain the word ‘showcase’ in their name:
+
 <!-- SHOWCASE START -->
 <!-- SHOWCASE END -->
 
 more artifacts will be added over time to demonstrate my evolving expertise
-
 
 ### let's connect!
 
 [![linkedin](https://img.shields.io/badge/LinkedIn-grey?style=flat-square&logo=linkedin&logoColor=white&labelColor=grey)](https://www.linkedin.com/in/kseniiavozisova/)
 [![email](https://img.shields.io/badge/Email-grey?style=flat-square&logo=gmail&logoColor=white&labelColor=grey)](mailto:kseniia.vozisova@gmail.com)
 [![telegram](https://img.shields.io/badge/Telegram-grey?style=flat-square&logo=telegram&logoColor=white&labelColor=grey)](https://t.me/vozikkks)
-
 
 ### testing tools:
 
@@ -42,7 +41,6 @@ more artifacts will be added over time to demonstrate my evolving expertise
 ![kaspresso](https://img.shields.io/badge/Kaspresso-grey?style=flat-square&labelColor=grey)
 ![playwright](https://img.shields.io/badge/Playwright-grey?style=flat-square&logo=playwright&logoColor=white&labelColor=grey)
 
-
 ### mobile and API testing:
 
 ![android studio](https://img.shields.io/badge/Android_Studio-grey?style=flat-square&logo=android-studio&logoColor=white&labelColor=grey)
@@ -50,7 +48,6 @@ more artifacts will be added over time to demonstrate my evolving expertise
 ![postman](https://img.shields.io/badge/Postman-grey?style=flat-square&logo=postman&logoColor=white&labelColor=grey)
 ![proxyman](https://img.shields.io/badge/Proxyman-grey?style=flat-square&labelColor=grey)
 ![charles](https://img.shields.io/badge/Charles-grey?style=flat-square&labelColor=grey)
-
 
 ### monitoring and logs:
 
@@ -71,8 +68,6 @@ more artifacts will be added over time to demonstrate my evolving expertise
 ![AWS](https://img.shields.io/badge/AWS-grey?style=flat-square&logo=amazon-aws&logoColor=white&labelColor=grey)
 
 I handle databases and services like PostgreSQL, MongoDB, AWS, Grafana and can easily adapt to new ones
-
-
 
 ### soft skills:
 
