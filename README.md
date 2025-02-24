@@ -45,14 +45,6 @@ more artifacts will be added over time to demonstrate my evolving expertise
 ![kaspresso](https://img.shields.io/badge/Kaspresso-grey?style=flat-square&labelColor=grey)
 ![playwright](https://img.shields.io/badge/Playwright-grey?style=flat-square&logo=playwright&logoColor=white&labelColor=grey)
 
-### mobile and API testing:
-
-![android studio](https://img.shields.io/badge/Android_Studio-grey?style=flat-square&logo=android-studio&logoColor=white&labelColor=grey)
-![xcode](https://img.shields.io/badge/Xcode-grey?style=flat-square&logo=xcode&logoColor=white&labelColor=grey)
-![postman](https://img.shields.io/badge/Postman-grey?style=flat-square&logo=postman&logoColor=white&labelColor=grey)
-![proxyman](https://img.shields.io/badge/Proxyman-grey?style=flat-square&labelColor=grey)
-![charles](https://img.shields.io/badge/Charles-grey?style=flat-square&labelColor=grey)
-
 ### monitoring and logs:
 
 ![grafana](https://img.shields.io/badge/Grafana-grey?style=flat-square&logo=grafana&logoColor=white&labelColor=grey)
