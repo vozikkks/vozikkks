@@ -7,7 +7,7 @@ about me:
 
 - 🎓 bachelor’s in Infocommunication Technologies and Communication Systems from ITMO University
 - 🌍 based in Hamburg, Germany
-- 💼 most recently at Mobimeo, enhancing mobile app quality and backend services
+- 💼 most recently at Mobimeo, enhancing quality of mobile apps and backend services
 - 💬 passionate about mobile/API testing, automation, and exploring innovative testing approaches
 - 📚 continuously learning and improving my skills
 
