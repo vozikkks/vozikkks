@@ -1,4 +1,4 @@
-### hello, I'm Kseniia 👋
+### hi, I'm Kseniia 👋
 
 QA Engineer with over 4 years of experience specializing in mobile, API, and backend testing. Passionate about test automation, CI/CD, and ensuring the delivery of high-quality software.
 Currently enhancing my skills in web automation with Playwright and TypeScript, and utilizing GitHub Actions for seamless CI
@@ -7,7 +7,6 @@ about me:
 
 - 🎓 bachelor’s in Infocommunication Technologies and Communication Systems from ITMO University
 - 🌍 based in Hamburg, Germany
-- 💼 most recently at Mobimeo, enhancing quality of mobile apps and backend services
 - 💬 passionate about mobile/API testing, automation, and exploring innovative testing approaches
 - 📚 continuously learning and improving my skills
 
@@ -27,7 +26,6 @@ more artifacts will be added over time to demonstrate my evolving expertise
 ### let's connect!
 
 [![linkedin](https://img.shields.io/badge/LinkedIn-grey?style=flat-square&logo=linkedin&logoColor=white&labelColor=grey)](https://www.linkedin.com/in/kseniiavozisova/)
-[![email](https://img.shields.io/badge/Email-grey?style=flat-square&logo=gmail&logoColor=white&labelColor=grey)](mailto:kseniia.vozisova@gmail.com)
 [![telegram](https://img.shields.io/badge/Telegram-grey?style=flat-square&logo=telegram&logoColor=white&labelColor=grey)](https://t.me/vozikkks)
 
 ### testing tools:
